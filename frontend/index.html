@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlly Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+      <div id="particles-js"></div>
+      <div id="progress-bar"></div>
+      <div class="cursor-glow"></div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">Sherlly</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+            <button id="theme-toggle">🌙</button>
+
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p>Hello, I'm</p>
+            <h1>Sherlly A</h1>
+            <h2><span id="typing-text"></span></h2>
+            <p class="intro">
+                Passionate BCA student skilled in web development, IoT projects,
+                Python, Java, SQL and creative UI designing.
+            </p>
+
+            <div class="hero-btns">
+                 <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+                <a href="#contact" class="btn-outline">Contact</a>
+            </div>
+        </div>
+
+        <!-- Robot -->
+        <div class="hero-image">
+            <img src="images/robot.jpeg">
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card">
+            <p>
+                I am a motivated BCA student interested in Full Stack Development,
+                UI/UX Design, IoT-based applications and modern futuristic websites.
+                I enjoy creating responsive, animated and user-friendly digital
+                experiences.
+            </p>
+
+            <div class="about-info">
+                <div class="box">
+                    <h3>Education</h3>
+                    <p>BCA Student</p>
+                </div>
+
+                <div class="box">
+                    <h3>Experience</h3>
+                    <p>Web & IoT Projects</p>
+                </div>
+
+                <div class="box">
+                    <h3>Focus</h3>
+                    <p>Frontend + Backend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+            <div class="skill-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+            <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+            <div class="skill-card"><i class="fa-brands fa-node-js"></i><span>Node JS</span></div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+<section id="projects" class="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Add Project Form -->
+    <div class="project-form">
+
+        <input type="text" id="title" placeholder="Project Title">
+
+        <input type="text" id="technology" placeholder="Technology">
+
+        <textarea id="description" placeholder="Project Description"></textarea>
+
+        <button onclick="addProject()">Add Project</button>
+
+    </div>
+
+    <!-- Search Bar -->
+<input 
+  type="text" 
+  id="searchInput" 
+  placeholder="Search Projects..."
+  class="search-bar"
+>
+
+
+    <!-- Dynamic Project Container -->
+    <div class="project-grid" id="projects-container">
+
+
+        <div class="project-card">
+            <img src="images/project1.jpeg" alt="Smart Grocery Expiry Tracker">
+            <h3>Smart Grocery Expiry Tracker</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project2.jpeg" alt="Hospital Token Booking App">
+            <h3>Hospital Token Booking App</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project3.jpeg" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project4.jpeg" alt="IoT Budget Tracker">
+            <h3>IoT Budget Tracker</h3>
+        </div>
+
+    </div>
+
+</section>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+            <p><i class="fa-solid fa-envelope"></i> Sherllyoffl@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 6369719373</p>
+            <p><i class="fa-solid fa-location-dot"></i> Tiruchirapalli, Tamil Nadu</p>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sherlly Portfolio | Full Stack Developer</p>
+    </footer>
+ 
+    <!-- ===== AI Chatbot ===== -->
+
+<div class="chatbot-container">
+
+    <button id="chat-toggle">💬</button>
+
+    <div class="chat-box" id="chat-box">
+
+        <div class="chat-header">
+            Sherlly AI Assistant
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+
+            <div class="bot-message">
+                Hello 👋 Ask me about Sherlly's skills or projects.
+            </div>
+
+        </div>
+
+        <div class="chat-input-area">
+
+            <input 
+                type="text"
+                id="chat-input"
+                placeholder="Type a message..."
+            >
+
+            <button onclick="sendMessage()">Send</button>
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
